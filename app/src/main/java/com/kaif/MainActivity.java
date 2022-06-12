@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button next=findViewById(R.id.next);
     }
-    public void sendMessage(View view) {
+    public void GotoAddList(View view) {
         Intent intent = new Intent(this, AddList.class);
         //EditText editText = (EditText) findViewById(R.id.editTextTextPersonName);
       // String message = editText.getText().toString();
