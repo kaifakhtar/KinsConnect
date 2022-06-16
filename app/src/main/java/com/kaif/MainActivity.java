@@ -18,9 +18,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void GotoAddList(View view) {
         Intent intent = new Intent(this, AddList.class);
-        //EditText editText = (EditText) findViewById(R.id.editTextTextPersonName);
-      // String message = editText.getText().toString();
-        //intent.putExtra(EXTRA_MESSAGE, message);
+
         startActivity(intent);
     }
 }

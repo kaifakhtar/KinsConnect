@@ -14,6 +14,9 @@
         android:theme="@style/Theme.KinsConnect"
         tools:targetApi="31">
         <activity
+            android:name=".AddContactsChips"
+            android:exported="false" />
+        <activity
             android:name=".PriorityButtons"
             android:exported="false" />
         <activity
