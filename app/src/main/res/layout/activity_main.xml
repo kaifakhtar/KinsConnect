@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#7FB5FF"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -12,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome! to KinsConnect"
-        android:textColor="#5e4beb"
+        android:textColor="#001D6E"
         android:textSize="30sp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
@@ -29,6 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Next"
+        android:background="@drawable/button_bg"
         android:textStyle="bold"
         android:onClick="GotoAddList"
         app:layout_constraintBottom_toBottomOf="parent"
