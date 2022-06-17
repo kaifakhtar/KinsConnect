@@ -16,13 +16,14 @@
         android:layout_margin="30dp"
         android:src="@drawable/ic_baseline_person_add_24" />
 
-    <TextView
-        android:id="@+id/contactText"
-        android:layout_width="wrap_content"
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Name will display here"
         android:layout_gravity="center"
-        android:textSize="30dp"
-        />
+        android:id="@+id/chipgroup"
+        android:layout_marginBottom="0dp">
+
+    </com.google.android.material.chip.ChipGroup>
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
