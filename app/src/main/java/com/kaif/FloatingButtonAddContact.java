@@ -16,11 +16,16 @@ import android.widget.Toast;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 public class FloatingButtonAddContact extends AppCompatActivity implements View.OnClickListener {
     private static final int RESULT_PICK_CONTACT =1;
     TextView tx;
     View fab;
     ChipGroup chipGroup;
+    public static HashMap<String,Integer> map=new HashMap();
+    static int counter=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,6 +74,11 @@ public class FloatingButtonAddContact extends AppCompatActivity implements View.
 
             // Create a Chip from Layout.
             Chip chip = (Chip) inflater.inflate(R.layout.layout_entry_chip, this.chipGroup, false);
+
+            counter++;
+
+            if(!map.containsKey(name))
+            {map.put(name,counter);
             chip.setText(name);
             chip.setChipIcon(ContextCompat.getDrawable(this,R.drawable.person));
             chip.setCloseIconVisible(true);
@@ -77,7 +87,10 @@ public class FloatingButtonAddContact extends AppCompatActivity implements View.
             chip.setOnCloseIconClickListener(this);
             chipGroup.addView(chip);
             this.chipGroup.addView(chip);
-            chipGroup.setVisibility(View.VISIBLE);
+            chipGroup.setVisibility(View.VISIBLE);}
+            else{
+                Toast toast = Toast.makeText(this, "Already added!", Toast.LENGTH_SHORT);
+                toast.show();}
 
         } catch (Exception e) {
             e.printStackTrace ();
