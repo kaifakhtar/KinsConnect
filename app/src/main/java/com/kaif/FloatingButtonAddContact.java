@@ -75,7 +75,6 @@ public class FloatingButtonAddContact extends AppCompatActivity implements View.
             chip.setClickable(false);
             chip.setCheckable(false);
             chip.setOnCloseIconClickListener(this);
-
             chipGroup.addView(chip);
             this.chipGroup.addView(chip);
             chipGroup.setVisibility(View.VISIBLE);

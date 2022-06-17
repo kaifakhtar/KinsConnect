@@ -63,6 +63,7 @@
         android:fontFamily="@font/msemib"
         android:text="Priority 2"
         android:textSize="30dp"
+        android:onClick="priority2_clicked"
         app:layout_constraintBottom_toTopOf="@+id/priority3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.578"
@@ -80,6 +81,7 @@
         android:fontFamily="@font/msemib"
         android:text="Priority 3"
         android:textSize="30dp"
+        android:onClick="priority3_clicked"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/priority2" />
