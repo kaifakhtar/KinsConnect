@@ -45,6 +45,7 @@
         android:fontFamily="@font/msemib"
         android:text="Priority 1"
         android:textSize="30dp"
+        android:onClick="priority1_clicked"
         app:layout_constraintBottom_toTopOf="@id/priority2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
