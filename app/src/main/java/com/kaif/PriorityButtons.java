@@ -16,14 +16,20 @@ public class PriorityButtons extends AppCompatActivity {
 
     public void priority1_clicked(View view) {
         Intent intent = new Intent(this, FloatingButtonAddContact.class);
+        //Intent i = new Intent(CurrentActivity.this, NewActivity.class);
+        intent.putExtra("PRIORITY","1");
         startActivity(intent);
     }
     public void priority2_clicked(View view) {
         Intent intent = new Intent(this, FloatingButtonAddContact.class);
+        //Intent i = new Intent(CurrentActivity.this, NewActivity.class);
+        intent.putExtra("PRIORITY","2");
         startActivity(intent);
     }
     public void priority3_clicked(View view) {
         Intent intent = new Intent(this, FloatingButtonAddContact.class);
+        //Intent i = new Intent(CurrentActivity.this, NewActivity.class);
+        intent.putExtra("PRIORITY","3");
         startActivity(intent);
     }
 }
